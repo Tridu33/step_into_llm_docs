@@ -1,0 +1,17 @@
+# Generated site files
+/site
+# Generated PDFs
+/pdf
+# bak files
+/bak
+# macOS File System
+.DS_Store
+# vs code
+.vscode
+# any vx.json created by Vnote
+vx.json
+
+
+
+
+
