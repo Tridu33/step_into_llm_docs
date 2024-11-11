@@ -1,7 +1,7 @@
 site_name: My Docs
 docs_dir: 'docs'
-repo_url: https://github.com/CubikTech/MkDocsTemplate
-repo_name: CubikTech/MkDocsTemplate
+repo_url: https://Tridu33.github.io/step_into_llm_docs/
+repo_name: Tridu33/step_into_llm_docs
 edit_uri: edit/main/docs/
 
 site_author: Contributors
@@ -9,6 +9,7 @@ copyright: Licensed under Creative Commons Attribution-NonCommercial 4.0 Interna
 
 theme:
   name: material
+  font: false
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -47,7 +48,14 @@ markdown_extensions:
 
 # Navigation
 nav:
-  - Welcome to MkDocs: index.md
+  - Home: 
+    - Home: index.md
+    - API usage: usage.md
+  - step_into_chatgpt: 
+    - Transformer: step_into_chatgpt/Transformer.md
+    - BERT: step_into_chatgpt/BERT.md
+  - step_into_llm: 
+    - ChatGLM: step_into_llm/ChatGLM.md
 
 # Plugins
 plugins:
@@ -58,15 +66,22 @@ plugins:
         - locale: en
           name: English
           default: true
-          site_name: Multi-Lang MkDocs Documentation Site
+          site_name: Step into LLM
           build: true
         - locale: zh
           name: 中文
-          site_name: 多语言 MkDocs 文档模板
+          site_name: 走进大语言模型
           build: true
       nav_translations:
         zh:
-          Welcome to MkDocs: 欢迎使用 MkDocs
+          - Home: 主页
+          - API usage: 用法API
+          - step_into_chatgpt: 走进ChatGPT
+          - Transformer: Transformer
+          - BERT: BERT
+          - step_into_llm: 走进LLM
+          - ChatGLM: ChatGLM
+          
   - with-pdf:
       #author: Contributors
       #copyright: Licensed under Creative Commons Attribution-NonCommercial 4.0 International License.
